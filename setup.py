@@ -33,7 +33,7 @@ def setup_package():
             about = {}
             exec(fp.read(), about)
 
-    with io.open(os.path.join(base_dir, 'README.rst'), encoding='utf8') as f:
+    with io.open(os.path.join(base_dir, 'README.MD'), encoding='utf8') as f:
         readme = f.read()
 
     setup(name=about['__title__'],
